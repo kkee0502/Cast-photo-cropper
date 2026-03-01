@@ -69,3 +69,9 @@ if st.button("✨ AI 편집 시작"):
 
 st.markdown("---")
 st.caption("© 2026 AI Dental Simulation Tool -")
+
+import joblib
+
+# 모델 저장 (예: CatBoost 모델)
+joblib.dump(model, 'credit_model.pkl')
+# 스케일러나 인코더가 있다면 그것도 저장해야 함 (예: scaler.pkl)
